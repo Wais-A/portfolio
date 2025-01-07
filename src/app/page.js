@@ -70,12 +70,12 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#030014] overflow-hidden">
+    <div className="min-h-screen bg-[#050523] overflow-hidden">
       {/* Navigation */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-[#030014]/70 backdrop-blur-md border-b border-gray-800/50"
+            ? "bg-[#050523]/70 backdrop-blur-md border-b border-gray-700/50"
             : "bg-transparent"
         }`}
       >
@@ -153,7 +153,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-[#060620]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center text-white">
             About Me
@@ -189,7 +189,7 @@ export default function Home() {
               ].map(({ icon: Icon, label }) => (
                 <div
                   key={label}
-                  className="p-6 bg-gray-900 rounded-xl text-center border border-gray-700"
+                  className="p-6 bg-[#0C0C35] rounded-xl text-center border border-gray-700/50"
                 >
                   <Icon size={32} className="mx-auto mb-4 text-blue-400" />
                   <p className="text-sm font-medium text-gray-100">{label}</p>
@@ -201,7 +201,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-[#0A0A2E]/80">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
             Featured Projects
@@ -221,7 +221,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                className="group relative bg-gray-900 rounded-xl overflow-hidden border border-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="ggroup relative bg-[#0C0C35] rounded-xl overflow-hidden border border-gray-700/50 shadow-lg hover:shadow-2xl transition-all duration-300"
               >
                 <div className="relative">
                   <img
@@ -259,7 +259,7 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 px-4 relative">
+      <section className="py-20 px-4 bg-[#080825]">
         <div className="max-w-7xl mx-auto relative z-10">
           <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
             Skills & Expertise
@@ -274,7 +274,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                className="bg-gray-900 rounded-xl p-6 border border-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="bg-[#0C0C35] rounded-xl p-6 border border-gray-700/50 shadow-lg hover:shadow-2xl transition-all duration-300"
               >
                 <h3 className="text-xl font-bold mb-4 capitalize text-white">
                   {category}
@@ -296,7 +296,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-gray-800 relative">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#0A0A2E] to-[#050523]">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:40px_40px]" />
         <motion.div
           initial={{ opacity: 0 }}
@@ -332,27 +332,27 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-gray-800/50">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300">
+          <p className="text-gray-200">
             © 2024 Wais Almakaleh. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a
               href="#"
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-gray-200 hover:text-white transition-colors"
             >
               <Github size={20} />
             </a>
 
             <a
               href="#"
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-gray-200 hover:text-white transition-colors"
             >
               <Linkedin size={20} />
             </a>
 
             <a
               href="mailto:walmakaleh@mymail.lccc.edu"
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-gray-200 hover:text-white transition-colors"
             >
               <Mail size={20} />
             </a>
