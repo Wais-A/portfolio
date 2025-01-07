@@ -221,7 +221,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                className="ggroup relative bg-[#0C0C35] rounded-xl overflow-hidden border border-gray-700/50 shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="group relative bg-[#0C0C35] rounded-xl overflow-hidden border border-gray-700/50 shadow-lg hover:shadow-2xl transition-all duration-300"
               >
                 <div className="relative">
                   <img
